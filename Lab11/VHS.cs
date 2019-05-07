@@ -27,15 +27,14 @@ namespace Lab11
             //string stop = Console.ReadLine().ToUpper();
             //if (stop != "S")
             //{
-            if (CurrentTime == Scenes.Count)
+            Console.WriteLine(Scenes[CurrentTime]);
+            if (CurrentTime < Scenes.Count - 1)
             {
-                CurrentTime = 0;
-                Console.WriteLine(Scenes[CurrentTime]);
+                CurrentTime++;
             }
             else
             {
-                Console.WriteLine(Scenes[CurrentTime]);
-                CurrentTime++;
+                CurrentTime = 0;
             }
             //}
             //else
